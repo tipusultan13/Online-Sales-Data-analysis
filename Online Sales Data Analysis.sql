@@ -1,5 +1,5 @@
---create database SQL101
---use SQL101
+--create database OnlineSalesData
+--use OnlineSalesData
 
 --Data Exploration--
 --This is a online sales data of several products taken from Kaggle--
