@@ -52,6 +52,54 @@ select * from Orders
 -- pattern of the orders and dates, trend of the product and find the future of the goods                  -
 ------------------------------------------------------------------------------------------------------------
 
+-- Most Popular Payment Methods --
+select PaymentMode, COUNT(PaymentMode) as PopularPaymentMode
+from Details
+group by PaymentMode
+order by PopularPaymentMode DESC
+-- COD -> 684, UPI -> 331, Debit Card -> 202, Credit Card -> 163, EMI -> 120 --
+-- As we can see cash on delivary is the most popular and EMI is the least popular among the customers --
+
+-- Most Sold Items --
+select Sub_Category, sum(Quantity) as MostSoldItem
+from Details
+group by Sub_Category
+order by MostSoldItem DESC
+-- Saree -> 795, Hankerchief -> 741, ...--
+-- Saree, HankerChief, Stole are the most online selling products -- 
+
+-- Most Profitable Products --
+select Sub_Category, sum(Profit) as MostProfitedItem
+from Details
+group by Sub_Category
+order by MostProfitedItem DESC
+-- Printers -> 8606, Bookcase -> 6516, Saree -> 4057.....--
+-- Even if Saree is the most selling products, the most profit earning good is Printer -- 
+-- And some items like Game, Furnishing at the bottom earn negative profit --
+
+-- Most Profitable Category
+
+select Category, sum(Profit) as MostProfitedCategory
+from Details
+group by Category
+order by MostProfitedCategory DESC
+-- Clothing -> 13325, Electronics -> 13162, Furniture -> 10476 --
+-- Clothing and Electronic products are very close in terms on earning products --
+-- No category earns negative profits eventually --
+
+-- Most and Least Digitilized States --
+select Details.Order_ID, Profit, State 
+into DigitilizedCity
+from Details
+full outer join Orders 
+on Details.Order_ID = Orders.Order_ID
+select State, sum(Profit) as ProfittedCity
+from DigitilizedCity
+group by State
+order by ProfittedCity desc
+-- Rule of thumb is the most digitalized city has most of the internet connection in the data --
+-- Hence, they will produce maximum online financial transaction --
+-- Madhya Pradesh -> 7382, Maharashtra -> 6963, Uttar Pradesh -> 3358
 
 
 
