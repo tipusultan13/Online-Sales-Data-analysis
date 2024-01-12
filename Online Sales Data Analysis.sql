@@ -48,7 +48,7 @@ select * from Orders
 -- Questions that can be solved --
 ------------------------------------------------------------------------------------------------------------
 -- Popular payment methods, most sold items, most profitable products, most profitable category,           -
--- most and least digitilized states, most and least digitalized city, top Customer based on total spending-
+-- most and least digitilized states, top seller based on total spending-
 -- pattern of the orders and dates, trend of the product and find the future of the goods                  -
 ------------------------------------------------------------------------------------------------------------
 
@@ -88,7 +88,8 @@ order by MostProfitedCategory DESC
 -- No category earns negative profits eventually --
 
 -- Most and Least Digitilized States --
-select Details.Order_ID, Profit, State 
+
+select Details.Order_ID, Profit, State
 into DigitilizedCity
 from Details
 full outer join Orders 
@@ -101,10 +102,29 @@ order by ProfittedCity desc
 -- Hence, they will produce maximum online financial transaction --
 -- Madhya Pradesh -> 7382, Maharashtra -> 6963, Uttar Pradesh -> 3358
 
+-- Top Selller Based on Total Spending --
+SELECT 
+    Orders.Order_ID AS Order_ID_Orders, 
+    Orders.Order_Date, 
+    Orders.CustomerName, 
+    Orders.State, 
+    Orders.City, 
+    Details.Order_ID AS Order_ID_Details, 
+    Details.Amount, 
+    Details.Profit, 
+    Details.Quantity, 
+    Details.Category, 
+    Details.Sub_Category, 
+    Details.PaymentMode
+INTO TotalInfo
+FROM Orders
+FULL OUTER JOIN Details ON Orders.Order_ID = Details.Order_ID
 
-
-
-
+select CustomerName, sum(Profit) as BestSeller
+from TotalInfo
+group by CustomerName
+order by BestSeller desc
+-- Madan Mohan -> 2166 earns maximum profits --
 
 
 
