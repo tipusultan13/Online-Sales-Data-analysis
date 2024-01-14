@@ -127,6 +127,7 @@ order by BestSeller desc
 -- Madan Mohan -> 2166 earns maximum profits --
 
 -- Pattern of the Orders and Dates --
+select Order_Date from Orders
 
 
 
