@@ -126,8 +126,65 @@ group by CustomerName
 order by BestSeller desc
 -- Madan Mohan -> 2166 earns maximum profits --
 
--- Pattern of the Orders and Dates --
-select Order_Date from Orders
+-- Pattern of the Orders --
+select 
+    CASE 
+        WHEN MONTH(Order_Date) = 1 THEN 'January'
+        WHEN MONTH(Order_Date) = 2 THEN 'February'
+        WHEN MONTH(Order_Date) = 3 THEN 'March'
+        WHEN MONTH(Order_Date) = 4 THEN 'April'
+        WHEN MONTH(Order_Date) = 5 THEN 'May'
+        WHEN MONTH(Order_Date) = 6 THEN 'June'
+        WHEN MONTH(Order_Date) = 7 THEN 'July'
+        WHEN MONTH(Order_Date) = 8 THEN 'August'
+        WHEN MONTH(Order_Date) = 9 THEN 'September'
+        WHEN MONTH(Order_Date) = 10 THEN 'October'
+        WHEN MONTH(Order_Date) = 11 THEN 'November'
+        WHEN MONTH(Order_Date) = 12 THEN 'December'
+    END AS Month,
+    SUM(Amount) AS TotalSales
+from 
+    Orders
+join 
+    Details ON Orders.Order_ID = Details.Order_ID
+group by
+    MONTH(Order_Date)
+order by
+    TotalSales desc
+-- The maximum sales are on January -> 61632. Maybe it is because of the new year and everybody wants to buy something for the office or household --
+
+-- Pattern of the Maximum Profit Earning Month --
+select 
+    CASE 
+        WHEN MONTH(Order_Date) = 1 THEN 'January'
+        WHEN MONTH(Order_Date) = 2 THEN 'February'
+        WHEN MONTH(Order_Date) = 3 THEN 'March'
+        WHEN MONTH(Order_Date) = 4 THEN 'April'
+        WHEN MONTH(Order_Date) = 5 THEN 'May'
+        WHEN MONTH(Order_Date) = 6 THEN 'June'
+        WHEN MONTH(Order_Date) = 7 THEN 'July'
+        WHEN MONTH(Order_Date) = 8 THEN 'August'
+        WHEN MONTH(Order_Date) = 9 THEN 'September'
+        WHEN MONTH(Order_Date) = 10 THEN 'October'
+        WHEN MONTH(Order_Date) = 11 THEN 'November'
+        WHEN MONTH(Order_Date) = 12 THEN 'December'
+    END AS Month,
+    SUM(Profit) AS TotalProfit
+from 
+    Orders
+join 
+    Details ON Orders.Order_ID = Details.Order_ID
+group by
+    MONTH(Order_Date)
+order by
+    TotalProfit desc
+-- The maximum profits earning month is November -> 12966. Maybe it is because of the Chritsmus or some other festival --
+
+
+
+
+
+
 
 
 
