@@ -47,9 +47,14 @@ select * from Orders
 
 -- Questions that can be solved --
 ------------------------------------------------------------------------------------------------------------
--- Popular payment methods, most sold items, most profitable products, most profitable category,           -
--- most and least digitilized states, top seller based on total spending-
--- pattern of the orders and dates, trend of the product and find the future of the goods                  -
+-- Which one is the most popular payment methods?
+-- Which item is the most sold items?
+-- which product is  most profitable products? 
+-- which category is the most profitable category?
+-- Which state is the most underdeveloped?
+-- which seller is the top seller based on total spending?
+-- Is there any pattern of the orders and dates?
+-- Which business could be more profittable for the future business?
 ------------------------------------------------------------------------------------------------------------
 
 -- Most Popular Payment Methods --
