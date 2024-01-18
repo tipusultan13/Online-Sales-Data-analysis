@@ -54,7 +54,7 @@ select * from Orders
 -- Which state is the most underdeveloped?
 -- which seller is the top seller based on total spending?
 -- Is there any pattern of the orders and dates?
--- Which business could be more profittable for the future business?
+-- Is there any correlation between the months and the orders?
 ------------------------------------------------------------------------------------------------------------
 
 -- Most Popular Payment Methods --
@@ -82,7 +82,7 @@ order by MostProfitedItem DESC
 -- Even if Saree is the most selling products, the most profit earning good is Printer -- 
 -- And some items like Game, Furnishing at the bottom earn negative profit --
 
--- Most Profitable Category
+-- Most Profitable Category --
 
 select Category, sum(Profit) as MostProfitedCategory
 from Details
@@ -92,8 +92,8 @@ order by MostProfitedCategory DESC
 -- Clothing and Electronic products are very close in terms on earning products --
 -- No category earns negative profits eventually --
 
--- Most and Least Digitilized States --
-
+-- Most and Least Developed States --
+DROP TABLE DigitilizedCity
 select Details.Order_ID, Profit, State
 into DigitilizedCity
 from Details
@@ -107,7 +107,7 @@ order by ProfittedCity desc
 -- Hence, they will produce maximum online financial transaction --
 -- Madhya Pradesh -> 7382, Maharashtra -> 6963, Uttar Pradesh -> 3358
 
--- Top Selller Based on Total Spending --
+-- Top Selller Based on Total Earning --
 SELECT 
     Orders.Order_ID AS Order_ID_Orders, 
     Orders.Order_Date, 
