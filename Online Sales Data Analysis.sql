@@ -83,7 +83,6 @@ order by MostProfitedItem DESC
 -- And some items like Game, Furnishing at the bottom earn negative profit --
 
 -- Most Profitable Category --
-
 select Category, sum(Profit) as MostProfitedCategory
 from Details
 group by Category
