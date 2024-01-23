@@ -52,6 +52,16 @@ Saree is the most sold item. The total number of sales is 795.
 
 ### Which product is the most profitable products?
 
+<img width="1024" alt="Screenshot 2024-01-23 at 14 03 46" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/012fddb0-71d2-4966-9734-a5a84eb8767a">
+
+Even if the saree is the most sold item, it is not the most profitable. The most profitable item is the printer. 
+
+### which category is the most profitable category?
+
+<img width="255" alt="Screenshot 2024-01-23 at 14 18 46" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/6bcf01f7-baad-4902-9d1e-740c8c001b05">
+
+Most of the profits come from Clothing and Electronics. It's good to see that even if some product loses profit, eventually, no category loses any profit. 
+
 
 
 
