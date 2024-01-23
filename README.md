@@ -7,8 +7,10 @@
 4. Tools and Methodology
 5. Findings
 6. Discussion
+
 ### 1. Motivation
 In the era of digital commerce, data reigns supreme. This project, "Online Sales Data Analysis," is driven by the need for businesses to unravel the insights hidden within their online sales data. This analysis aims to empower businesses with the strategic intelligence needed to optimize sales strategies, enhance product offerings, and stay ahead in the competitive e-commerce landscape by scrutinizing customer behaviors, market trends, and performance metrics. In a nutshell, the project's motivation lies in the transformative power of data-driven decision-making for online businesses
+
 ### 2. Data 
 The dataset comprises two main tables, "Details" and "Orders," obtained from Kaggle.com. 
 
@@ -35,7 +37,23 @@ This dataset provides a comprehensive view of online sales transactions, includi
 SQL is used to clean and analyze the data in order to complete this project. After finding the answers, the data was organized via Excel before uploading those to Tableau. Finally, Tableau was used to visualize all the findings.
 
 ### 5. Findings
+
+### Which one is the most popular payment method?
+
 <img width="407" alt="Screenshot 2024-01-23 at 13 45 35" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/fd97bdcd-cca8-407a-b006-c8edaf4a3a50">
 
 According to the data, the most popular payment method is COD, which is cash on delivery. 684 payments are recorded via this method. 
+
+### Which item is the most sold item?
+
+<img width="679" alt="Screenshot 2024-01-23 at 13 52 44" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/4d614807-e607-4d79-8c83-cbc8519f9fe1">
+
+Saree is the most sold item. The total number of sales is 795.
+
+### Which product is the most profitable products?
+
+
+
+
+
 
