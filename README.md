@@ -34,5 +34,8 @@ This dataset provides a comprehensive view of online sales transactions, includi
    
 SQL is used to clean and analyze the data in order to complete this project. After finding the answers, the data was organized via Excel before uploading those to Tableau. Finally, Tableau was used to visualize all the findings.
 
+### 5. Findings
+<img width="407" alt="Screenshot 2024-01-23 at 13 45 35" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/fd97bdcd-cca8-407a-b006-c8edaf4a3a50">
 
+According to the data, the most popular payment method is COD, which is cash on delivery. 684 payments are recorded via this method. 
 
