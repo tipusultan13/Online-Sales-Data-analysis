@@ -17,7 +17,7 @@ The dataset comprises two main tables, "Details" and "Orders," obtained from Kag
 <img width="831" alt="Screenshot 2024-01-23 at 13 25 08" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/df0ec05a-d275-419e-a910-7959dd7f3f0a">
 
 This dataset provides a comprehensive view of online sales transactions, including details about the products (quantity, category, payment mode) and customer-related information (order date, customer name, location). The integration of these tables allows for a holistic analysis of online sales dynamics, enabling insights into product performance, customer behavior, and geographic trends.
-[Click herea]([quora.com/profile/Ashish-Kulkarni-100](https://www.kaggle.com/datasets/samruddhi4040/online-sales-data)https://www.kaggle.com/datasets/samruddhi4040/online-sales-data)  to see the overview or the dat
+[Click here](www.kaggle.com/datasets/samruddhi4040/online-sales-data)  to see the overview or the dat
 
 ### 3. Research Questions
 1. Which one is the most popular payment method?
@@ -87,6 +87,8 @@ We have the most profitable months, where the seller earns most of the profits. 
 <img width="524" alt="Screenshot 2024-01-24 at 09 54 46" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/efe62982-82dc-416d-92f7-71c2f7ccc0fe">
 
 Then In most selling months, we have the measurement of the total quantity sold. The month's name is January. It is because January is the start of the year. And most households and offices want some stuff from the budget.
+
+Check the complete dashboard [here](www.kaggle.com/datasets/samruddhi4040/online-sales-data) 
 
 
 
