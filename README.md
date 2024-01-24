@@ -74,5 +74,21 @@ It is very difficult to define an underdeveloped city without having the informa
 
 According to the data the graph says Madan Mohan, Arushi, and Madhav are the most profit-earning sellers. 
 
+### 7. Is there any pattern of the orders and dates?
+
+Here, We have two graphs to explain the situation. 
+1. Most selling months
+2. Most Profitable months.
+
+<img width="826" alt="Screenshot 2024-01-24 at 09 54 27" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/670e6036-4e80-4eb0-92e1-9656a037bbdb">
+
+We have the most profitable months, where the seller earns most of the profits. The most profitable month is November. Maybe it is because November is just before Christmas, and everyone wants to buy expensive gifts for their family.    
+
+<img width="524" alt="Screenshot 2024-01-24 at 09 54 46" src="https://github.com/tipusultan13/Online-Sales-Data-analysis/assets/156308034/efe62982-82dc-416d-92f7-71c2f7ccc0fe">
+
+Then In most selling months, we have the measurement of the total quantity sold. The month's name is January. It is because January is the start of the year. And most households and offices want some stuff from the budget.
+
+
+
 
 
