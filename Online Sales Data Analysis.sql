@@ -52,7 +52,7 @@ select * from Orders
 -- which product is  most profitable products? 
 -- which category is the most profitable category?
 -- Which state is the most underdeveloped?
--- which seller is the top seller based on total spending?
+-- which seller is the top seller based on total profit earning?
 -- Is there any pattern of the orders and dates?
 -- Is there any correlation between the months and the orders?
 ------------------------------------------------------------------------------------------------------------
