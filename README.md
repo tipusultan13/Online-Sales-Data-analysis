@@ -88,7 +88,7 @@ We have the most profitable months, where the seller earns most of the profits. 
 
 Then In most selling months, we have the measurement of the total quantity sold. The month's name is January. It is because January is the start of the year. And most households and offices want some stuff from the budget.
 
-Check the complete dashboard [here](www.kaggle.com/datasets/samruddhi4040/online-sales-data) 
+Check the complete dashboard [here](https://public.tableau.com/app/profile/tipusultan13/vizzes) 
 
 
 
